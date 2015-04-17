@@ -22,7 +22,7 @@
 <section id="section1" class="section1">
 Please enter the following information to CREATE a new customer:<br><br>
 <label>Customer ID*: </label>
-<input type="text" id="custid"  maxlength="5" and minlength="5">
+<input type="text" id="custid"  maxlength="5" pattern=".{5,}"   required title="5 characters minimum">
 
 <br>
 <label>Customer Name: </label>
@@ -64,7 +64,7 @@ Please enter the following information to UPDATE the order shipping address:<br>
 <section id="section3" class="section3">
 Please enter the following information to DELETE a customer:<br><br>
 <label>Customer ID*: </label>
-<input type="text" id="custid2">
+<input type="text" id="custid2" maxlength="5" pattern=".{5,}"   required title="5 characters minimum">
 <br><br>
 <button onclick="DeleteCustomer()" id="deletecustomer">Delete Customer</button>
 
